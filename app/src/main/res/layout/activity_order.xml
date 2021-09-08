@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/grey"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:text="@string/order_name"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginVertical="3dp"
+            android:layout_marginHorizontal="10dp">
+            <ImageView
+                android:id="@+id/ivGioHang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/store" />
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="6dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/giohang_soluongitem"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvSum_order"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="@string/order_tvCount"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/tvWelcome_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:text="@string/order_tvWelcome" />
+
+    <ListView
+        android:id="@+id/lvOrder"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/listview_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:text="@string/order_tvTotalPrice" />
+
+        <TextView
+            android:id="@+id/tvGia_order"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="@string/order_tvPrice" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:textAllCaps="false"
+        android:text="@string/order_btnOrder" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/tvThanks"/>
+
+</LinearLayout>

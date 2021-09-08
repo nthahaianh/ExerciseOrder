@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AppOrder</string>
+
+    <string name="login_etUsername">Username</string>
+    <string name="login_etPassword">Password</string>
+    <string name="login_btnLogin">Login</string>
+
+    <string name="order_name">Food order</string>
+    <string name="order_tvCount">0</string>
+    <string name="order_tvWelcome">Welcome </string>
+    <string name="order_tvTotalPrice">Total Price</string>
+    <string name="order_tvPrice">0$</string>
+    <string name="order_btnOrder">Order</string>
+
+    <string name="yourorder_name">Your order</string>
+    <string name="yourorder_tvTotal">Total</string>
+    <string name="yourorder_tvPrice">0$</string>
+
+
+</resources>
